@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'antd/dist/antd.css';
+import Nav from './components/Nav/';
+import Slider from './components/Slider/';
+import Header from './components/Header/';
 
-class App extends Component {
+class App extends React.Component {
+  state = {
+    current: 'mail',
+  }
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+    return (      
+      <div>
+        <Nav />
+        <Slider />
+        <Header value="Up Coming" />
+        <Header value="Popular" />
+        <Header value="Top Rated" />
+        <Header value="Now Playing" />
       </div>
     );
   }

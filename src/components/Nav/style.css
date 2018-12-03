@@ -1,0 +1,10 @@
+.nav-principal{
+  padding: 1rem;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-principal img{
+  height: 30px;
+  width: auto;
+}
